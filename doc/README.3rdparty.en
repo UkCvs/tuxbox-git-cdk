@@ -1,5 +1,5 @@
 #
-# $Id: README.3rdparty.en,v 1.2 2004/02/14 03:31:08 carjay Exp $
+# $Id: README.3rdparty.en,v 1.2.2.1 2009/01/11 19:53:59 dbt Exp $
 #
 # This document describes the necessary steps to add
 # 3rd party software to the CDK
@@ -17,6 +17,9 @@
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
+
+For more informations see:
+http://wiki.dbox2-tuning.net/Category:Development:Oldmake
 
 And this is how you add new tools to the cdk
 --------------------------------------------

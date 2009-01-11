@@ -1,5 +1,5 @@
 #
-# $Id: README.3rdparty.de,v 1.6 2003/09/30 07:08:44 obi Exp $
+# $Id: README.3rdparty.de,v 1.6.4.1 2009/01/11 19:53:59 dbt Exp $
 #
 # Inhalt dieses Dokuments sind die noetigen Schritte zum hinzufuegen
 # von 3rd party programmen zum CDK.
@@ -16,6 +16,9 @@
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
+
+For more details see:
+http://wiki.dbox2-tuning.net/README.3rdparty.de_%28Oldmake%29
 
 Und so baut man neue Tools in das cdk ein:
 ------------------------------------------

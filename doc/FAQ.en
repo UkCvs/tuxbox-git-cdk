@@ -1,5 +1,5 @@
 #
-# $Id: FAQ.en,v 1.5 2003/09/30 07:08:44 obi Exp $
+# $Id: FAQ.en,v 1.5.4.1 2009/01/11 19:56:43 dbt Exp $
 #
 # Frequently Asked Questions about the Cross Development Kit
 #
@@ -15,6 +15,14 @@
 # but WITHOUT ANY WARRANTY; without even the implied warranty of
 # MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 #
+#$Log: FAQ.en,v $
+#Revision 1.5.4.1  2009/01/11 19:56:43  dbt
+#created references to tuxbox wiki
+#
+#
+
+For more informations see:
+http://wiki.dbox2-tuning.net/Category:Development:Oldmake
 
 Q: Why is there no configure script?
 A: "autoconf" creates configure from "configure.ac". You can call
