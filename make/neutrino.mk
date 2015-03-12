@@ -12,6 +12,7 @@ neutrino: $(appsdir)/tuxbox/neutrino/config.status
 	$(MAKE) -C $(appsdir)/tuxbox/neutrino all
 	$(MAKE) -C $(appsdir)/tuxbox/neutrino install
 	$(MAKE) neutrino-additional-fonts
+	$(MAKE) var-httpd-styles
 
 flash-neutrino: $(flashprefix)/root-neutrino
 
@@ -20,6 +21,7 @@ $(flashprefix)/root-neutrino: $(appsdir)/tuxbox/neutrino/config.status
 	$(MAKE) -C $(appsdir)/tuxbox/neutrino install prefix=$@
 	$(MAKE) -C $(appsdir)/dvb/zapit install prefix=$@
 	$(MAKE) neutrino-additional-fonts targetprefix=$@
+	$(MAKE) var-httpd-styles targetprefix=$@
 if ENABLE_ESD
 	$(INSTALL) $(targetprefix)/bin/esd $@/bin
 endif
@@ -42,3 +44,9 @@ neutrino-additional-fonts:
 	cp $(appsdir)/tuxbox/enigma/data/fonts/bluehigh.ttf $(targetprefix)/share/fonts
 	cp $(appsdir)/tuxbox/enigma/data/fonts/pakenham.ttf $(targetprefix)/share/fonts
 	cp $(appsdir)/tuxbox/enigma/data/fonts/unmrs.pfa    $(targetprefix)/share/fonts
+
+var-httpd-styles:
+	install -d $(targetprefix)/var/httpd
+	install -d $(targetprefix)/var/httpd/styles
+	cp $(appsdir)/tuxbox/neutrino/daemons/nhttpd/web/styles/Y_Dist.css $(targetprefix)/var/httpd
+	ln -sf /var/httpd/Y_Dist.css $(targetprefix)/share/tuxbox/neutrino/httpd-y/Y_Dist.css
