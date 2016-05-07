@@ -1143,7 +1143,7 @@ AC_ARG_WITH(gnuserver,
 AC_ARG_WITH(defaultserver,
         [  --with-defaultserver=ADDRESS
                           the server that is taken if no server is given/works (without http://)],
-        [defaultserver="$with_defaultserver"],[defaultserver=www.dbox2-tuning.net/cvsdata/files])
+        [defaultserver="$with_defaultserver"],[defaultserver=www.i-have-a-dreambox.com/Archive])
 
 if test "$cvsdir" = "NONE"; then
 	if test "$appsdir" = "NONE"; then
